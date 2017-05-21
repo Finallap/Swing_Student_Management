@@ -1,9 +1,3 @@
-/**
- * 项目名：student
- * 修改历史：
- * 作者： MZ
- * 创建时间： 2016年1月7日-上午11:07:57
- */
 package com.up.student.view;
 
 import java.awt.BorderLayout;

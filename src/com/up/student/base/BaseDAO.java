@@ -1,9 +1,3 @@
-/**
- * 项目名：student
- * 修改历史：
- * 作者： MZ
- * 创建时间： 2016年1月6日-上午10:04:37
- */
 package com.up.student.base;
 
 import java.sql.ResultSet;
