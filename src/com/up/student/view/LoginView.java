@@ -10,6 +10,7 @@ import java.awt.event.KeyEvent;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
@@ -96,6 +97,7 @@ public class LoginView extends JFrame {
 			dispose();
 			new MainView();
 		} else {
+			JOptionPane.showMessageDialog(null, AppConstants.LOGIN_ERROR_MASSAGE, AppConstants.LOGIN_ERROR_TITLE,JOptionPane.WARNING_MESSAGE);  
 			username.setText("");
 			password.setText("");
 		}

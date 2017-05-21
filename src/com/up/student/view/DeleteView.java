@@ -8,6 +8,7 @@ import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
@@ -66,8 +67,13 @@ public class DeleteView extends JFrame {
 						String[][] result = ((StudentDAO) BaseDAO.getAbilityDAO(DAO.StudentDAO))
 								.list(MainView.currPageNum);
 						MainView.initJTable(MainView.jTable, result);
+						JOptionPane.showMessageDialog(null, AppConstants.SUCCESS_MASSAGE, AppConstants.SUCCESS_TITLE,JOptionPane.INFORMATION_MESSAGE);
 					}
+//					else
+//						JOptionPane.showMessageDialog(null, AppConstants.DELET_ERROR_EXIST_MASSAGE, AppConstants.DELET_ERROR_TITLE,JOptionPane.WARNING_MESSAGE);  
 				}
+				else
+					JOptionPane.showMessageDialog(null, AppConstants.DELET_ERROR_NULL_MASSAGE, AppConstants.DELET_ERROR_TITLE,JOptionPane.WARNING_MESSAGE);
 			}
 		});
 		jPanelSouth.add(deleteButton);

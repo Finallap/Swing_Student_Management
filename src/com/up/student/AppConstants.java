@@ -27,6 +27,8 @@ public class AppConstants {
 	public static final String LOGIN_PASSWORD = "密码";
 	public static final String LOGIN = "登录";
 	public static final String RESET = "重置";
+	public static final String LOGIN_ERROR_TITLE = "登陆失败！";
+	public static final String LOGIN_ERROR_MASSAGE = "登陆失败！（可能是用户名或密码错误）";
 
 	// main view
 	public static final String MAINVIEW_TITLE = "学生信息管理系统";
@@ -47,13 +49,26 @@ public class AppConstants {
 	public static final String ADDVIEW_TITLE = "添加学生信息";
 	public static final String ADDVIEW_ADDBUTTON = "添加";
 	public static final String EXITBUTTON = "退出";
+	public static final String ADD_ERROR_TITLE = "添加失败！";
+	public static final String ADD_ERROR_NULL_MASSAGE = "存在空字段，请全部输入后再操作！";
+	public static final String ADD_ERROR_EXIST_MASSAGE = "已存在用户名、学号相同的信息，添加失败！";
 
 	// delete view
 	public static final String DELETEVIEW_TITLE = "删除学生信息";
 	public static final String DELETEVIEW_DELETEBUTTON = "删除";
+	public static final String DELET_ERROR_TITLE = "删除失败！";
+	public static final String DELET_ERROR_NULL_MASSAGE = "存在空字段，请全部输入全部信息后再操作！";
+	public static final String DELET_ERROR_EXIST_MASSAGE = "未找到该同学，操作失败！";
 
 	// update view
 	public static final String UPDATEVIEW_TITLE = "更新学生信息";
 	public static final String UPDATEVIEW_UPDATEBUTTON = "更新";
+	public static final String UPDATE_ERROR_TITLE = "删除失败！";
+	public static final String UPDATE_ERROR_NULL_MASSAGE = "存在空字段，请全部输入全部信息后再操作！";
+	public static final String UPDATE_ERROR_EXIST_MASSAGE = "未找到该同学，操作失败！";
+	
+	// massage
+	public static final String SUCCESS_TITLE = "操作成功！";
+	public static final String SUCCESS_MASSAGE = "操作成功！";
 
 }
