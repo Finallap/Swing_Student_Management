@@ -8,67 +8,63 @@ public class AppConstants {
 	// jdbc
 	public static final String JDBC_URL = "jdbc:mysql://localhost:3306/student_management?useUnicode=true&amp;characterEncoding=UTF-8";
 	public static final String JDBC_USERNAME = "root";
-	public static final String JDBC_PASSWORD = "";
+	public static final String JDBC_PASSWORD = "0930";
 	public static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
 
 	// student field
-	public static final String STUDENT_NAME = "姓名";
-	public static final String STUDENT_SNO = "学号";
-	public static final String STUDENT_SEX = "性别";
-	public static final String STUDENT_DEPARTMETN = "院系";
-	public static final String STUDENT_HOMETOWN = "籍贯";
-	public static final String STUDENT_EMAIL = "电子邮件";
-	public static final String STUDENT_TEL = "联系方式";
-	public static final String STUDENT_MARK = "学分";
+	public static final String STUDENT_NAME = "Name";
+	public static final String STUDENT_SNO = "No.";
+	public static final String STUDENT_SEX = "Gender";
+	public static final String STUDENT_DEPARTMETN = "College";
+	public static final String STUDENT_HOMETOWN = "Hometown";
+	public static final String STUDENT_EMAIL = "Mail";
+	public static final String STUDENT_TEL = "Tel";
+	public static final String STUDENT_MARK = "Score";
 
 	// login view
-	public static final String LOGIN_TITLE = "登录界面";
-	public static final String LOGIN_USERNAME = "用户名";
-	public static final String LOGIN_PASSWORD = "密码";
-	public static final String LOGIN = "登录";
-	public static final String RESET = "重置";
-	public static final String LOGIN_ERROR_TITLE = "登陆失败！";
-	public static final String LOGIN_ERROR_MASSAGE = "登陆失败！（可能是用户名或密码错误）";
+	public static final String LOGIN_TITLE = "Login Interface";
+	public static final String LOGIN_USERNAME = "ID";
+	public static final String LOGIN_PASSWORD = "Password";
+	public static final String LOGIN = "Log in";
+	public static final String RESET = "Reset";
+	public static final String LOGIN_ERROR_TITLE = "FAILURE！";
+	public static final String LOGIN_ERROR_MASSAGE = "FAILURE！（maybe for wrong ID or password）";
 
 	// main view
-	public static final String MAINVIEW_TITLE = "学生信息管理系统";
-	public static final String MAINVIEW_PAGENUM_JLABEL_DI = "第 ";
-	public static final String MAINVIEW_PAGENUM_JLABEL_YE = "/99 页";
-	public static final String MAINVIEW_FIND_JLABEL = "查询结果";
-	public static final String MAINVIEW_FIRST = "首页";
-	public static final String MAINVIEW_LAST = "末页";
-	public static final String MAINVIEW_PRE = "上一页";
-	public static final String MAINVIEW_NEXT = "下一页";
+	public static final String MAINVIEW_TITLE = "Student Information Management System";
+	public static final String MAINVIEW_PAGENUM_JLABEL_DI = "Page ";
+	public static final String MAINVIEW_PAGENUM_JLABEL_YE = "/99 ";
+	public static final String MAINVIEW_FIND_JLABEL = "Query Result";
+	public static final String MAINVIEW_FIRST = "Home";
+	public static final String MAINVIEW_LAST = "Last Page";
+	public static final String MAINVIEW_PRE = "Previous Page";
+	public static final String MAINVIEW_NEXT = "Next Page";
 	public static final String PARAM_FIND_CONDITION = "";
-	public static final String PARAM_FIND = "查找";
-	public static final String PARAM_ADD = "添加";
-	public static final String PARAM_DELETE = "删除";
-	public static final String PARAM_UPDATE = "更新";
+	public static final String PARAM_FIND = "Search";
+	public static final String PARAM_ADD = "Add";
+	public static final String PARAM_DELETE = "Delete";
+	public static final String PARAM_UPDATE = "Update";
 
 	// add view
-	public static final String ADDVIEW_TITLE = "添加学生信息";
-	public static final String ADDVIEW_ADDBUTTON = "添加";
-	public static final String EXITBUTTON = "退出";
-	public static final String ADD_ERROR_TITLE = "添加失败！";
-	public static final String ADD_ERROR_NULL_MASSAGE = "存在空字段，请全部输入后再操作！";
-	public static final String ADD_ERROR_EXIST_MASSAGE = "已存在用户名、学号相同的信息，添加失败！";
+	public static final String ADDVIEW_TITLE = "Add Student Information";
+	public static final String ADDVIEW_ADDBUTTON = "Add";
+	public static final String EXITBUTTON = "Exit";
+	public static final String ADD_ERROR_TITLE = "FAILURE！";
+	public static final String ADD_ERROR_EXIST_MASSAGE = "There has been information with the same name and Number!";
 
 	// delete view
-	public static final String DELETEVIEW_TITLE = "删除学生信息";
-	public static final String DELETEVIEW_DELETEBUTTON = "删除";
-	public static final String DELET_ERROR_TITLE = "删除失败！";
-	public static final String DELET_ERROR_NULL_MASSAGE = "存在空字段，请全部输入全部信息后再操作！";
-	public static final String DELET_ERROR_EXIST_MASSAGE = "未找到该同学，操作失败！";
+	public static final String DELETEVIEW_TITLE = "Delete Student Information";
+	public static final String DELETEVIEW_DELETEBUTTON = "Delete";
+	public static final String DELET_ERROR_TITLE = "FAILURE！";
 
 	// update view
-	public static final String UPDATEVIEW_TITLE = "更新学生信息";
-	public static final String UPDATEVIEW_UPDATEBUTTON = "更新";
-	public static final String UPDATE_ERROR_TITLE = "删除失败！";
-	public static final String UPDATE_ERROR_NULL_MASSAGE = "存在空字段，请全部输入全部信息后再操作！";
-	public static final String UPDATE_ERROR_EXIST_MASSAGE = "未找到该同学，操作失败！";
+	public static final String UPDATEVIEW_TITLE = "Update Student Information";
+	public static final String UPDATEVIEW_UPDATEBUTTON = "Update";
+	public static final String UPDATE_ERROR_TITLE = "FAILURE!";
 	
 	// massage
-	public static final String SUCCESS_TITLE = "操作成功！";
-	public static final String SUCCESS_MASSAGE = "操作成功！";
-
+	public static final String SUCCESS_TITLE = "Success Operation!";
+	public static final String SUCCESS_MASSAGE = "Success Operation！";
+	public static final String ERROR_NOT_EXIST_MASSAGE = "Cannot find the student";
+	public static final String ERROR_NULL_MASSAGE = "Please don't leave any information empty";
 }

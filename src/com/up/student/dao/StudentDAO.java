@@ -14,7 +14,7 @@ import com.up.student.model.Student;
  */
 public class StudentDAO extends BaseDAO {
 	private final int fieldNum = 9;
-	private final int showNum = 15;
+	private final int showNum = 8;
 	private static StudentDAO sd = null;
 
 	public static synchronized StudentDAO getInstance() {

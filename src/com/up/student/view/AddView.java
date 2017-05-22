@@ -87,11 +87,11 @@ public class AddView extends JFrame {
 						MainView.initJTable(MainView.jTable, result);
 						JOptionPane.showMessageDialog(null, AppConstants.SUCCESS_MASSAGE, AppConstants.SUCCESS_TITLE,JOptionPane.INFORMATION_MESSAGE);
 					}
-//					else
-//						JOptionPane.showMessageDialog(null, AppConstants.ADD_ERROR_EXIST_MASSAGE, AppConstants.ADD_ERROR_TITLE,JOptionPane.WARNING_MESSAGE);
+					else
+						JOptionPane.showMessageDialog(null, AppConstants.ADD_ERROR_EXIST_MASSAGE, AppConstants.ADD_ERROR_TITLE,JOptionPane.WARNING_MESSAGE);
 				}
 				else
-					JOptionPane.showMessageDialog(null, AppConstants.ADD_ERROR_NULL_MASSAGE, AppConstants.ADD_ERROR_TITLE,JOptionPane.WARNING_MESSAGE);  
+					JOptionPane.showMessageDialog(null, AppConstants.ERROR_NULL_MASSAGE, AppConstants.ADD_ERROR_TITLE,JOptionPane.WARNING_MESSAGE);  
 			}
 		});
 		jPanelSouth.add(addButton);

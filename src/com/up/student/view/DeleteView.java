@@ -60,6 +60,7 @@ public class DeleteView extends JFrame {
 					buildStudent(stu);
 					boolean isSuccess = ((StudentDAO) BaseDAO.getAbilityDAO(DAO.StudentDAO)).delete(stu);
 					if (isSuccess) {
+						System.out.println("Delete success");
 						setEmpty();
 						if (MainView.currPageNum < 0 || MainView.currPageNum > 99) {
 							MainView.currPageNum = 1;
@@ -69,11 +70,11 @@ public class DeleteView extends JFrame {
 						MainView.initJTable(MainView.jTable, result);
 						JOptionPane.showMessageDialog(null, AppConstants.SUCCESS_MASSAGE, AppConstants.SUCCESS_TITLE,JOptionPane.INFORMATION_MESSAGE);
 					}
-//					else
-//						JOptionPane.showMessageDialog(null, AppConstants.DELET_ERROR_EXIST_MASSAGE, AppConstants.DELET_ERROR_TITLE,JOptionPane.WARNING_MESSAGE);  
+					else
+						JOptionPane.showMessageDialog(null, AppConstants.ERROR_NOT_EXIST_MASSAGE, AppConstants.DELET_ERROR_TITLE,JOptionPane.WARNING_MESSAGE);  
 				}
 				else
-					JOptionPane.showMessageDialog(null, AppConstants.DELET_ERROR_NULL_MASSAGE, AppConstants.DELET_ERROR_TITLE,JOptionPane.WARNING_MESSAGE);
+					JOptionPane.showMessageDialog(null, AppConstants.ERROR_NULL_MASSAGE, AppConstants.DELET_ERROR_TITLE,JOptionPane.WARNING_MESSAGE);
 			}
 		});
 		jPanelSouth.add(deleteButton);
@@ -86,8 +87,8 @@ public class DeleteView extends JFrame {
 		});
 		jPanelSouth.add(exitButton);
 
-		this.add(jPanelCenter, BorderLayout.CENTER);
-		this.add(jPanelSouth, BorderLayout.SOUTH);
+		getContentPane().add(jPanelCenter, BorderLayout.CENTER);
+		getContentPane().add(jPanelSouth, BorderLayout.SOUTH);
 
 		setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 		setBounds(470, 250, 400, 130);
